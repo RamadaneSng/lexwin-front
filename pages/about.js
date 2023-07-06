@@ -18,7 +18,7 @@ const about = () => {
     "Responsables Marketing",
     "Stagiaires",
   ];
-  const [filter, setFilter] = useState("Fondateurs");
+  // const [filter, setFilter] = useState("Fondateurs");
 
   const [mouted, setMounted] = useState(false);
 

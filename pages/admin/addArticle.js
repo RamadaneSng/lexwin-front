@@ -10,7 +10,7 @@ import Link from "next/link";
 import axios from "@/lib/axios";
 
 const addArticle = () => {
-  const { user, isLoadind, logout } = useAuth({ middleware: "auth" });
+  // const { user, isLoadind, logout } = useAuth({ middleware: "auth" });
   const [image, setImage] = useState();
   //dropzone
   const { acceptedFiles, fileRejections, getRootProps, getInputProps } =

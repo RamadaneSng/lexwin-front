@@ -1,0 +1,208 @@
+.about {
+    width: 100%;
+    // margin: 0 auto;
+    padding: 50px 0;
+    // margin-top: -55px;
+
+    background: #F4f5EF;
+
+    .about-content {
+
+        width: 80%;
+        margin: 0 auto;
+
+        .top {
+            display: grid;
+            grid-template-columns: 40% 60%;
+
+            @media screen and (max-width: 769px) {
+                display: block;
+            }
+
+
+            h2 {
+                font-family: $m-bold;
+                color: $blue-m;
+                font-size: 3rem;
+
+                @media screen and (max-width: 769px) {
+                    font-size: 2.5rem;
+                }
+
+                @media screen and (max-width: 415px) {
+                    font-size: 1.5rem;
+
+                }
+
+                span {
+                    color: $red;
+                }
+            }
+
+            p {
+                font-family: $m-medium;
+                margin: 20px 0;
+                font-size: 0.9rem;
+                text-align: left;
+            }
+        }
+
+        .bottom {
+            display: grid;
+            grid-template-areas: 'img1 img2 img3'
+                'img1 li li';
+            grid-template-rows: 50% 50%;
+
+            grid-gap: 30px;
+            width: 100%;
+            height: 100%;
+
+            @media screen and (max-width: 769px) {
+                grid-template-areas: 'img1 img2 '
+                    'img1 img3 ';
+
+
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 50% 50%;
+            }
+
+            @media screen and (max-width: 415px) {
+                row-gap: 10px;
+
+
+            }
+
+
+            .img-1 {
+                grid-area: img1;
+                background: url('../../public/assets/images/nature-morte-balance-justice\ \(1\).jpg') center/cover no-repeat;
+                height: 500px;
+                image-rendering: high-quality;
+                width: 400px;
+                // height: 100%;
+
+                @media screen and (max-width: 769px) {
+                    width: 300px;
+                    height: 250px;
+                }
+
+                @media screen and (max-width: 415px) {
+                    width: 165px;
+                }
+            }
+
+            .img-2 {
+                grid-area: img2;
+                background: url('../../public/assets/images/pexels-august-de-richelieu-4427611\ \(1\).jpg') center/cover;
+                image-rendering: high-quality;
+
+            }
+
+            .img-3 {
+                grid-area: img3;
+                background: url('../../public/assets/images/businessman-consulting-legal-expert.jpg') center/cover;
+            }
+
+            .list {
+                grid-area: li;
+                height: 100%;
+                justify-content: space-between;
+                width: 100%;
+
+                @media screen and (max-width: 769px) {
+                    display: none;
+                }
+
+
+                ul {
+            
+                    margin-top: -10px;
+
+                    li {
+                        padding: 10px 0;
+                        margin: 0;
+                        font-family: $m-medium;
+                        font-size: 0.8rem;
+                        display: flex;
+
+                        span {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .left {
+            .left-content {
+                width: 70%;
+
+                h2 {
+                    font-family: $marcellus;
+                    color: $red;
+                }
+
+                p {
+                    font-family: $m-medium;
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        .right {
+            background: url('../../public/assets/images/pexels-august-de-richelieu-4427611.jpg') center/cover;
+            image-rendering: auto;
+
+            height: 350px;
+        }
+    }
+
+    .group {
+        width: 90%;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .learn-more-btn {
+        background: $red;
+
+        @media screen and (max-width: 1400px) {
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 1170px) {
+            margin-top: 80px;
+        }
+
+        @media screen and (max-width: 1050px) {
+            margin-top: 200px;
+        }
+
+        @media screen and (max-width: 900px) {
+            margin-top: 250px;
+        }
+
+        @media screen and (max-width: 769px) {
+            margin-top: 0;
+        }
+
+    }
+}
+
+.swiper {
+
+    .swiper-wrapper {
+        padding-bottom: 55px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        .swiper-pagination-bullet {
+            background: $red;   
+            width: 18px;
+        }
+    }
+}

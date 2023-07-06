@@ -1,0 +1,57 @@
+.expertises {
+    margin: 0 auto;
+    padding: 50px 0;
+
+    h2 {
+        font-family: $m-bold;
+        color: $blue-m;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-bottom: 50px;
+
+        @media screen and (max-width: 415px) {
+            font-size: 1.5rem;
+        }
+
+        span {
+            color: $red;
+        }
+    }
+
+    .services-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 40px;
+        column-gap: 50px;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        @media screen and (max-width: 769px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media screen and (max-width: 415px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        .img {
+            border: 7px solid #de23398a;
+            border-radius: 25px;
+            width: 80px;
+            padding: 10px;
+            @include flex-center;
+        }
+
+        h3 {
+            font-family: $m-bold;
+            margin: 15px 0;
+            width: 100%;
+
+        }
+
+        p {
+            font-family: $m-medium;
+            font-size: 0.8rem;
+        }
+
+    }
+}

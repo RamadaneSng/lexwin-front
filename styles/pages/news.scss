@@ -1,0 +1,109 @@
+.news {
+
+    .filter-container {
+        width: 100%;
+        background: $blue-m;
+        color: white;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        @media screen and (max-width: 415px) {
+            justify-content: center;
+            padding: 10px;
+
+        }
+
+
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            padding: 0;
+
+            @media screen and (max-width: 415px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+
+            }
+
+            input[type="radio"] {
+                display: none;
+
+                &:checked~label {
+                    background: $red;
+                    position: relative;
+                    padding: 5px;
+                    border-radius: 5px;
+
+
+                    &::after {
+                        content: "";
+                        height: 3px;
+                        width: 0;
+                        background: $blue-m;
+                        position: absolute;
+                        border-radius: 10px;
+                        bottom: -5px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        -webkit-animation: anim 0.3s ease forwards;
+                        animation: anim 0.6s ease forwards;
+
+                        @-webkit-keyframes anim {
+                            to {
+                                width: 0;
+                            }
+                        }
+
+                        @keyframes anim {
+                            to {
+                                width: 120%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            label {
+                cursor: pointer;
+                margin: 20px;
+                transition: 0.1s;
+
+
+
+                @media screen and (max-width: 769px) {
+                    font-size: 0.8rem;
+
+                }
+
+                @media screen and (max-width: 415px) {
+                    margin: 0;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+
+    .articles-container {
+        width: 100%;
+
+        ul {
+            width: 90%;
+            padding: 40px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 40px;
+
+            @media screen and (max-width: 769px) {
+                width: 97%;
+            }
+
+            @media screen and (max-width: 415px) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+}

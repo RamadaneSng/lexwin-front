@@ -1,0 +1,405 @@
+.mantine-Tabs-tab:focus span {
+    color: $red;
+    font-weight: bold;
+}
+
+.mantine-Tabs-tab {
+    font-family: $m-medium;
+
+}
+
+.about-page {
+    width: 100%;
+
+    .about-page-header {
+        background: url('../../public/assets/images/services-bg.jpg') center/cover;
+        height: 70vh;
+        position: relative;
+        width: 100%;
+        z-index: 10;
+
+        .color {
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background: rgba(222, 35, 57, 0.203);
+            background: linear-gradient(4deg, rgba(222, 35, 57, 0.368) 23%, rgba(255, 255, 255, 0) 78%);
+        }
+
+        .content {
+            color: white;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            flex-direction: column;
+            padding-left: 200px;
+
+            @media screen and (max-width: 769px) {
+                padding-left: 40px;
+            }
+
+            @media screen and (max-width: 415px) {
+                padding-left: 20px;
+            }
+
+            h3 {
+                font-family: $m-bold;
+                color: $blue-m;
+                margin-bottom: -15px;
+                font-size: 1.2rem;
+
+                @media screen and (max-width: 769px) {
+                    color: white;
+                }
+
+                @media screen and (max-width: 415px) {
+                    color: white;
+                }
+            }
+
+            h1 {
+                font-family: $m-bold;
+                font-size: 4rem;
+
+                @media screen and (max-width: 769px) {
+                    color: $blue-m;
+                }
+
+                @media screen and (max-width: 415px) {
+                    font-size: 2.5rem;
+                    color: $red;
+                }
+            }
+
+            p {
+                font-family: $m-regular;
+                margin-top: -10px;
+                font-size: 1.2rem;
+
+                @media screen and (max-width: 415px) {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .who-we-are {
+        width: 80%;
+        margin: 0 auto;
+        font-family: $m-medium;
+        margin-bottom: 100px;
+        // height: 50vh;
+
+        .presentation {
+            width: 100%;
+
+            .group {
+                display: grid;
+                grid-template-columns: 45% 55%;
+                column-gap: 20px;
+                align-items: center;
+
+
+                @media screen and (max-width: 415px) {
+                    display: block;
+                }
+            }
+        }
+
+        h2 {
+            font-family: $m-bold;
+            color: $blue-m;
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 40px 0;
+
+            @media screen and (max-width: 415px) {
+                font-size: 1.5rem;
+            }
+
+            span {
+                color: $red;
+            }
+        }
+
+        .left {
+
+            background: url('../../public/assets/images/pexels-august-de-richelieu-4427611\ \(1\).jpg') center/cover;
+            image-rendering: high-quality;
+            height: 250px;
+
+        }
+
+        .right {
+
+            @media screen and (max-width: 769px) {
+                margin-left: 10px;
+            }
+
+            @media screen and (max-width: 415px) {
+                margin-top: 20px;
+            }
+
+            span {
+                color: $blue-m;
+                font-weight: bold;
+            }
+
+            font-family: $m-medium;
+            font-size: 1.2rem;
+            color: rgba(0, 0, 0, 0.767);
+
+        }
+    }
+
+    .our-team {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 90px;
+
+        h2 {
+            font-family: $m-bold;
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 70px 0;
+        }
+
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            margin: 0 auto;
+            padding: 0;
+            margin-bottom: 50px;
+            font-family: $m-medium;
+
+            input[type="radio"] {
+                display: none;
+
+                &:checked~label {
+                    color: $red;
+                    position: relative;
+                    font-weight: bold;
+                    border-color: $red;
+
+                }
+            }
+
+            label {
+                cursor: pointer;
+                padding: 20px;
+                transition: 0.1s;
+                border-bottom: 1px solid #00000041;
+
+            }
+        }
+
+        .tab-content {
+
+            width: 80%;
+            margin: 0 auto;
+
+            .center {
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+            }
+        }
+
+    }
+
+    .immigration {
+        width: 100%;
+        margin: 40px 0;
+        margin-bottom: 100px;
+        // height: 70vh;
+
+        .header {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            width: 80%;
+            margin: 0 auto;
+
+            @media screen and (max-width: 769px) {
+                display: block;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+                color: $blue-m;
+                font-family: $m-bold;
+
+                span {
+                    color: $red;
+                }
+
+                @media screen and (max-width: 769px) {
+                    font-size: 1.5rem;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+            }
+
+            p {
+                font-family: $m-medium;
+            }
+        }
+
+        .immigration-content {
+            width: 80%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+            margin-top: 20px;
+            column-gap: 20px;
+
+            @media screen and (max-width: 769px) {
+                display: block;
+            }
+
+
+
+            .img {
+                background: url('../../public/assets/images/homme-positif-peau-sombre-poils-epais-detient-billet-avion-passeport-se-prepare-pour-tournee-etranger-attend-depart-avion-porte-vetements-mode-blancs-modeles-mur-bleu.jpg') center/cover no-repeat;
+                height: 300px;
+            }
+
+            .list {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+
+
+                li {
+                    margin: 20px 0;
+                    font-family: $m-medium;
+
+                    span {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 769px) {
+                display: block;
+            }
+        }
+
+    }
+
+    .quote {
+        background: $white-1;
+        padding: 40px 0;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 60%;
+            margin: 40px auto;
+            background: white;
+            padding: 30px 0;
+            border-radius: 100px;
+
+            @media screen and (max-width: 769px) {
+                width: 80%;
+                border-radius: 10px;
+            }
+
+            @media screen and (max-width: 415px) {
+                margin-top: 20px;
+                width: 90%;
+
+            }
+
+        }
+
+        p {
+            width: 80%;
+            margin: 15px auto;
+            text-align: center;
+            font-family: $m-medium;
+        }
+
+        .icon {
+
+            svg {
+                font-size: 2rem;
+                color: rgba(0, 0, 0, 0.116);
+            }
+        }
+
+        h3 {
+            color: $red;
+            font-family: $m-bold;
+        }
+    }
+
+    .office {
+        text-align: center;
+        background: $white-1;
+        padding: 40px 0;
+
+        h2 {
+            font-family: $m-bold;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-family: $m-medium;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .content {
+            border: 1px solid gray;
+
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+
+            border-radius: 70%;
+
+            .img {
+                height: 250px;
+                position: relative;
+                width: 250px;
+                margin: 0 auto;
+                border-radius: 50%;
+                background: url('../../public//assets/images/abidjan.jpg') center/cover no-repeat;
+
+
+                span {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    background: rgba(0, 0, 0, 0.473);
+                    padding: 30px;
+                    border-radius: 50%;
+
+                    color: white;
+                    cursor: pointer;
+
+                    svg {
+                        font-size: 2rem;
+                    }
+
+                }
+            }
+        }
+    }
+
+}

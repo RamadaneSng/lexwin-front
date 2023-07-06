@@ -1,0 +1,91 @@
+.article-card {
+    width: 380px;
+    font-family: $m-medium;
+    cursor: pointer;
+    padding: 20px;
+    border: 1px solid #03214c4d;
+    border-radius: 10px;
+    min-height: 420px;
+    margin: 0 auto;
+    position: relative;
+    column-gap: 40px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+    @media screen and (max-width: 769px) {
+        max-width: 200px;
+        min-height: 300px;
+    }
+
+    @media screen and (max-width: 415px) {
+        max-width: 250px;
+        min-height: 300px;
+    }
+
+
+    a {
+        color: $black;
+    }
+
+    .img {
+        width: 100%;
+        @include x-center;
+
+        img {
+            object-fit: cover;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+            border-radius: 10px;
+
+            @media screen and (max-width: 769px) {
+                width: 180px;
+                height: 100px;
+            }
+
+            @media screen and (max-width: 415px) {
+                width: 220px;
+                height: 120px;
+            }
+        }
+    }
+
+    .domain {
+        margin: 10px 0;
+        width: 80%;
+
+        .badge {
+            background: $blue-m;
+            color: white;
+        }
+
+    }
+
+    .title {
+        font-size: 0.8rem;
+        width: 70%;
+
+        @media screen and (max-width: 769px) {
+            width: 90%;
+        }
+
+    }
+
+    .date {
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 5px;
+        text-align: right;
+        font-style: italic;
+        position: absolute;
+        right: 35px;
+        bottom: 10px;
+    }
+
+    .content {
+        font-size: 0.9rem;
+        margin-top: 10px;
+
+        span {
+            cursor: pointer;
+        }
+    }
+}

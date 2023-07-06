@@ -1,0 +1,212 @@
+.dashboard {
+    width: 100%;
+
+    .diviser {
+        width: 100%;
+        height: 1px;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.153);
+        height: 1px;
+    }
+
+    .add-article-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 100px;
+        margin-bottom: 0;
+        margin-bottom: -40px;
+
+        .back {
+            a {
+                color: black;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                svg {
+                    margin-top: 10px;
+                }
+
+
+            }
+        }
+
+        button {
+            background: $blue-m;
+        }
+    }
+
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 60px;
+
+        .left {
+            display: flex;
+            gap: 40px;
+            font-family: $m-medium;
+
+            .group {
+
+
+                p {
+                    font-size: 0.9rem;
+                    color: rgba(0, 0, 0, 0.547);
+                }
+
+                .avatar {
+                    text-transform: uppercase;
+
+                }
+            }
+
+            button {
+                background: $red;
+            }
+
+        }
+    }
+
+    .content {
+        width: 100%;
+        margin: 50px 0;
+
+        .header {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: $m-medium;
+
+            .left {
+                h2 {
+                    font-family: $m-bold;
+                    font-size: 2rem;
+                }
+            }
+
+            .right {
+                button {
+                    background: $blue-m;
+                }
+            }
+        }
+
+        .add-article {
+
+            width: 50%;
+            margin: 0 auto;
+            font-family: $m-bold;
+
+            #title-input {
+                // height: 200px;
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+
+            .dropzone-container {
+                font-family: $m-medium;
+                margin-bottom: 20px;
+
+
+                .dropzone {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px;
+                    border-width: 2px;
+                    border-radius: 2px;
+                    border-color: #eeeeee;
+                    border-style: dashed;
+                    background-color: #fafafa;
+                    color: #bdbdbd;
+                    outline: none;
+                    transition: border .24s ease-in-out;
+
+                    .drop-text {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        .icon {
+                            svg {
+                                font-size: 3rem;
+                            }
+                        }
+
+                        .info {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+
+                aside {
+                    margin-top: 10px;
+                }
+            }
+
+            #select {
+                margin-bottom: 20px;
+            }
+
+            #body {
+                margin-bottom: 20px;
+                font-family: $m-medium;
+                font-size: 1.2rem;
+                overflow: hidden;
+            }
+
+        }
+    }
+
+    .articles-container {
+        margin-top: 50px;
+
+        ul {
+
+            li {
+                width: 70%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid rgba(0, 0, 0, 0.127);
+                align-items: center;
+                padding: 10px;
+                .left {
+                    h3 {
+                        font-family: $m-medium;
+                        font-size: 1rem;
+                    }
+
+                    span {
+                        font-size: 0.9rem;
+                        font-family: $m-regular;
+                    }
+                }
+
+                .right {
+                    cursor: pointer;
+                    padding: 8px;
+                    border-radius: 5px;
+                    @include flex-center;
+                    border: 1px solid rgba(0, 0, 0, 0.127);
+
+                    font-family: $m-regular;
+
+                    #edit-button {
+                        color: black;
+                    }
+
+                    .delete {
+                        color: $red;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.admin-auth {
+    max-height: 100vh;
+
+    height: 100vh;
+   
+    .login-container {
+      
+        width: 20%;
+        margin-top: 200px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 40px 20px;
+
+        form {
+
+            button[type="submit"] {
+                background: $blue-m;
+            }
+        }
+    }
+}

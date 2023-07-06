@@ -1,0 +1,26 @@
+header {
+    width: 100%;
+
+    .slider {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .swiper {
+
+        .swiper-wrapper {
+            padding-bottom: 55px;
+        }
+
+        .swiper-horizontal>.swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+
+            .swiper-pagination-bullet {
+                background: $red;
+                width: 18px;
+            }
+        }
+    }
+}

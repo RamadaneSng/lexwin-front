@@ -1,0 +1,130 @@
+.services {
+
+    .services-container {
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        margin-top: 65px;
+        height: 60vh;
+
+        @media screen and (max-width: 769px) {
+            height: 30vh;
+        }
+
+        @media screen and (max-width: 415px) {
+            height: 50vh;
+        }
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+
+            h2 {
+                font-size: 3rem;
+                font-family: $m-bold;
+                text-align: center;
+                margin-bottom: 40px;
+                color: $blue-m;
+                @include x-center;
+                width: 100%;
+
+                @media screen and (max-width: 769px) {
+                    font-size: 2.5rem;
+                }
+
+                @media screen and (max-width: 415px) {
+                    font-size: 1.5rem;
+                }
+
+                span {
+                    color: $red;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .list {
+            width: 60%;
+            margin: 0 auto;
+
+            @media screen and (max-width: 769px) {
+                width: 80%;
+            }
+
+            .center {
+                grid-template-columns: 50% 50%;
+                column-gap: 250px;
+                display: grid;
+                width: 100%;
+
+                @media screen and (max-width: 769px) {
+                    column-gap: 100px;
+                }
+
+                @media screen and (max-width: 415px) {
+                    display: block;
+                }
+            }
+
+            ul {
+                font-family: $m-bold;
+                width: 100%;
+                margin: 0 auto;
+
+                a {
+                    color: black;
+                }
+
+                li {
+                    margin: 15px 0;
+                    font-size: 1.2rem;
+
+                    @media screen and (max-width: 769px) {
+                        font-size: 0.8rem;
+
+                    }
+
+                  span {
+                        svg {
+                            color: $red;
+                        }
+                    }
+
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+    }
+
+    .services-content {
+        display: flex;
+        width: 90%;
+        margin-left: auto;
+        margin-top: -160px;
+        .img {
+            border: 7px solid #b69d7475;
+            border-radius: 25px;
+            width: 80px;
+            padding: 10px;
+            @include flex-center;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-family: $m-bold;
+            font-size: 1.7rem;
+            margin: 30px 0;
+
+        }
+
+        p {
+            font-family: $m-medium;
+            font-size: 1.5rem;
+        }
+
+    }
+}

@@ -1,0 +1,29 @@
+//global settings
+@import './settings';
+
+//components
+@import './components/nav';
+@import './components/header';
+@import './components/slide';
+@import './components/about';
+@import './components/services';
+@import './components/testimonials';
+@import './components/team';
+@import './components/callToAction';
+@import './components/footer';
+@import './components/articles';
+@import './components/articleCard';
+@import './components/burgerMenu';
+@import './components/expertises';
+@import './components/action';
+@import './components/loading';
+@import './components/adminLoginForm';
+
+//pages
+@import './pages/home';
+@import './pages/about-page';
+@import './pages/contact.scss';
+@import './pages/services';
+@import './pages/news.scss';
+@import './pages/article';
+@import './pages/dashboard';

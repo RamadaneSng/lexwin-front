@@ -1,0 +1,23 @@
+.contact {
+
+    h2 {
+        font-family: $m-bold;
+        font-size: 2.5rem;
+        color: $blue-m;
+        margin: 20px 0 20px 100px;
+
+        span {
+            color: $red;
+        }
+    }
+
+    .diviser {
+        width: 80%;
+        height: 1px;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.153);
+        margin-bottom: 60px;
+        height: 1px;
+    }
+
+}

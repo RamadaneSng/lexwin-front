@@ -6,11 +6,11 @@ const Loading = () => {
     <div className="loading">
       <div className="logo">
         <Image
-          src="/assets/images/logo 3 copie.png"
+          src="/assets/images/Logo.png"
           width={100}
           priority
           height={50}
-          alt="logo web-menu"
+          alt="logo lexwin"
         />
       </div>
     </div>

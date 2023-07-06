@@ -16,11 +16,11 @@ const Footer = () => {
         <div className="left">
           <div className="logo">
             <Image
-              src="/assets/images/logo 3 copie.png"
+              src="/assets/images/Logo.png"
               width={120}
               priority
               height={55}
-              alt="logo web-menu"
+              alt="logo lexwin"
             />
           </div>
         </div>
